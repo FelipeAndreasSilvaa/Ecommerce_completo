@@ -13,7 +13,7 @@ const ProdutoModel = require('./models/Produtos');
 const app = express()
 const port = 3001
 
-mongoose.connect('mongodb://localhost:27017/Ecommerce_completo')
+mongoose.connect('mongodb://localhost:27017/SeuBancoDeDados')
 
 app.use(cors({ origin: "http://localhost:3000" })); // Ajuste a porta conforme necessário
 app.use(express.json())
